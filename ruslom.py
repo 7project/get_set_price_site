@@ -35,9 +35,9 @@ class Ruslom:
             "cp_cena_m_org": "22 002",
             "cp_cena_m_ocn": "7 000",
             "cp_cena_m_st": "6 000",
-            "cp_cena_medi": "615",
-            "cp_cena_allum": "105",
-            "cp_cena_br_lt": "350",
+            "cp_cena_medi": "610",
+            "cp_cena_allum": "110",
+            "cp_cena_br_lt": "340",
             "cp_cena_nerg": "160",
             "cp_cena_acb": "50",
             "cp_cena_sv": "90",
@@ -45,7 +45,7 @@ class Ruslom:
         }
 
         result = self.session.post(url='https://ruslom-ekb.ru/wp-admin/themes.php?page=themadmin', data=data,
-                                   verify=False)
+                                   verify=False, timeout=50)
         result.raise_for_status()
 
         print('Цены поменял! ')
