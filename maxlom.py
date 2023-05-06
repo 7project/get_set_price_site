@@ -81,18 +81,18 @@ class Maxlom:
 # TODO если данные есть просто получить их в переменные
 data_to_post = {
         "ss_action": "save",
-        "cp_cena_m_roz": "22 000",
-        "cp_cena_m_org": "22 002",
+        "cp_cena_m_roz": "22 500",
+        "cp_cena_m_org": "22 501",
         "cp_cena_m_ocn": "7 000",
         "cp_cena_m_st": "14 000",
-        "cp_cena_medi": "630",
+        "cp_cena_medi": "625",
         "cp_cena_allum": "123",
         # TODO бронза
-        "cp_cena_br_lt": "480",
+        "cp_cena_br_lt": "485",
         "cp_cena_nerg": "93",
         # TODO латунь
         "cp_cena_acb": "355",
-        "cp_cena_sv": "51",
+        "cp_cena_sv": "52",
         "cp_save": "Сохранить"
     }
 

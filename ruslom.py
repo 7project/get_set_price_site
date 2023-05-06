@@ -31,13 +31,13 @@ class Ruslom:
         self.session.cookies = cookies
         data = {
             "ss_action": "save",
-            "cp_cena_m_roz": "22 000",
-            "cp_cena_m_org": "22 002",
+            "cp_cena_m_roz": "22 500",
+            "cp_cena_m_org": "22 502",
             "cp_cena_m_ocn": "7 000",
             "cp_cena_m_st": "6 000",
             "cp_cena_medi": "610",
-            "cp_cena_allum": "110",
-            "cp_cena_br_lt": "340",
+            "cp_cena_allum": "100",
+            "cp_cena_br_lt": "350",
             "cp_cena_nerg": "160",
             "cp_cena_acb": "50",
             "cp_cena_sv": "90",
