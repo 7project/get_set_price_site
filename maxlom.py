@@ -8,8 +8,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-LOGIN = os.getenv("LOGIN_CHEL")
-PASS = os.getenv("PASS_CHEL")
+# TODO прод
+LOGIN = os.environ.get("LOGIN_CHEL")
+PASS = os.environ.get("PASS_CHEL")
+
+# LOGIN = os.getenv("LOGIN_CHEL")
+# PASS = os.getenv("PASS_CHEL")
 
 
 class Maxlom:
