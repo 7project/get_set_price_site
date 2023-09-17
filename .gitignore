@@ -160,3 +160,5 @@ cython_debug/
 .idea/
 database/maxlom_price.db
 database/.project
+database/.settings
+ruslom_bot/
