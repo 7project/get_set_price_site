@@ -75,6 +75,7 @@ def get_result_raw(result_raw_: list[str], connect_: Connection, get_next_id_for
         """
         Формирование нужного формата строки
         "17,5" -> "17 500"
+        "18.5" -> "18 500"
         "15" -> "15 000"
         :return str -> default = '0'
         """
@@ -84,6 +85,8 @@ def get_result_raw(result_raw_: list[str], connect_: Connection, get_next_id_for
 
             if ',' in number:
                 return number.replace(",", " ") + "00"
+            elif '.' in number:
+                return number.replace(".", " ") + "00"
             else:
                 return number + " 000"
 
@@ -169,5 +172,12 @@ data_to_post = {
 
 if __name__ == '__main__':
     # TODO старт, получения данных в нужном формате и запуск второго стрипта на замену
+    current_datetime = datetime.datetime.now()
     site = Maxlom(data_to_post)
+    print(f'Время запуска скрипта ->>>>> {current_datetime}')
     site.run()
+    # TODO файл на сервере сохраняется в /root ?
+    # TODO нужно прописывать полный путь
+    with open('loging.txt', 'a', encoding='utf-8') as file:
+        file.write(f'Completed! Time -> {datetime.datetime.now()}.\n')
+    print(f'Скрипт отработал ->>>>> {datetime.datetime.now()}')
